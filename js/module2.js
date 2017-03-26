@@ -1,0 +1,181 @@
+var _ = require('lodash');
+var people = [{
+  "id": 1,
+  "first_name": "Julia",
+  "last_name": "Ward",
+  "email": "jward0@hibu.com",
+  "gender": "Female",
+  "ip_address": "151.212.9.51"
+}, {
+  "id": 2,
+  "first_name": "Ashley",
+  "last_name": "Hunt",
+  "email": "ahunt1@privacy.gov.au",
+  "gender": "Female",
+  "ip_address": "16.126.29.66"
+}, {
+  "id": 3,
+  "first_name": "Evelyn",
+  "last_name": "Bennett",
+  "email": "ebennett2@behance.net",
+  "gender": "Female",
+  "ip_address": "136.173.50.234"
+}, {
+  "id": 4,
+  "first_name": "Joshua",
+  "last_name": "Hughes",
+  "email": "jhughes3@sogou.com",
+  "gender": "Male",
+  "ip_address": "183.83.47.159"
+}, {
+  "id": 5,
+  "first_name": "Nicole",
+  "last_name": "Webb",
+  "email": "nwebb4@cbslocal.com",
+  "gender": "Female",
+  "ip_address": "145.191.45.126"
+}, {
+  "id": 6,
+  "first_name": "Heather",
+  "last_name": "Harrison",
+  "email": "hharrison5@gov.uk",
+  "gender": "Female",
+  "ip_address": "47.45.61.23"
+}, {
+  "id": 7,
+  "first_name": "Andrea",
+  "last_name": "Murphy",
+  "email": "amurphy6@pbs.org",
+  "gender": "Female",
+  "ip_address": "144.245.135.56"
+}, {
+  "id": 8,
+  "first_name": "Benjamin",
+  "last_name": "Parker",
+  "email": "bparker7@springer.com",
+  "gender": "Male",
+  "ip_address": "115.193.135.92"
+}, {
+  "id": 9,
+  "first_name": "Jacqueline",
+  "last_name": "Gilbert",
+  "email": "jgilbert8@narod.ru",
+  "gender": "Female",
+  "ip_address": "207.26.135.244"
+}, {
+  "id": 10,
+  "first_name": "Gloria",
+  "last_name": "Cook",
+  "email": "gcook9@fotki.com",
+  "gender": "Female",
+  "ip_address": "229.18.109.153"
+}, {
+  "id": 11,
+  "first_name": "Annie",
+  "last_name": "Morrison",
+  "email": "amorrisona@addtoany.com",
+  "gender": "Female",
+  "ip_address": "101.62.254.24"
+}, {
+  "id": 12,
+  "first_name": "Robert",
+  "last_name": "Long",
+  "email": "rlongb@sun.com",
+  "gender": "Male",
+  "ip_address": "191.170.67.118"
+}, {
+  "id": 13,
+  "first_name": "Mary",
+  "last_name": "Murphy",
+  "email": "mmurphyc@apache.org",
+  "gender": "Female",
+  "ip_address": "173.22.167.213"
+}, {
+  "id": 14,
+  "first_name": "Anne",
+  "last_name": "Lynch",
+  "email": "alynchd@parallels.com",
+  "gender": "Female",
+  "ip_address": "44.210.136.154"
+}, {
+  "id": 15,
+  "first_name": "Stephen",
+  "last_name": "Hunt",
+  "email": "shunte@buzzfeed.com",
+  "gender": "Male",
+  "ip_address": "183.197.212.158"
+}, {
+  "id": 16,
+  "first_name": "Janice",
+  "last_name": "West",
+  "email": "jwestf@time.com",
+  "gender": "Female",
+  "ip_address": "205.0.182.53"
+}, {
+  "id": 17,
+  "first_name": "Arthur",
+  "last_name": "Morrison",
+  "email": "amorrisong@flickr.com",
+  "gender": "Male",
+  "ip_address": "248.124.226.241"
+}, {
+  "id": 18,
+  "first_name": "Anne",
+  "last_name": "Robinson",
+  "email": "arobinsonh@home.pl",
+  "gender": "Female",
+  "ip_address": "54.174.154.193"
+}, {
+  "id": 19,
+  "first_name": "Virginia",
+  "last_name": "Stone",
+  "email": "vstonei@europa.eu",
+  "gender": "Female",
+  "ip_address": "214.224.116.61"
+}, {
+  "id": 20,
+  "first_name": "Kathryn",
+  "last_name": "George",
+  "email": "kgeorgej@google.de",
+  "gender": "Female",
+  "ip_address": "226.152.114.238"
+}, {
+  "id": 21,
+  "first_name": "Elizabeth",
+  "last_name": "Holmes",
+  "email": "eholmesk@symantec.com",
+  "gender": "Female",
+  "ip_address": "21.6.228.240"
+}, {
+  "id": 22,
+  "first_name": "Raymond",
+  "last_name": "Jackson",
+  "email": "rjacksonl@ow.ly",
+  "gender": "Male",
+  "ip_address": "115.226.46.80"
+}, {
+  "id": 23,
+  "first_name": "Theresa",
+  "last_name": "Kelly",
+  "email": "tkellym@bravesites.com",
+  "gender": "Female",
+  "ip_address": "176.208.123.53"
+}, {
+  "id": 24,
+  "first_name": "Jonathan",
+  "last_name": "Burke",
+  "email": "jburken@weibo.com",
+  "gender": "Male",
+  "ip_address": "208.81.186.177"
+}, {
+  "id": 25,
+  "first_name": "Tammy",
+  "last_name": "Martinez",
+  "email": "tmartinezo@dedecms.com",
+  "gender": "Female",
+  "ip_address": "24.136.173.113"
+}]
+
+var femaleCount = _.filter(people, {gender: "Female"}).length;
+
+alert(femaleCount + " Females!")
